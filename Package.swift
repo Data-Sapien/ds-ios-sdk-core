@@ -7,24 +7,19 @@ let package = Package(
     products: [
         .library(name: "DSSDKCore", targets: ["DSSDKCore"])
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
-        // 1) Vendorled Realm frameworks
-        .binaryTarget(name: "Realm", path: "./Realm.xcframework"),
-        .binaryTarget(name: "RealmSwift", path: "./RealmSwift.xcframework"),
+        // 1) Optional / other vendor binaries you still ship
         .binaryTarget(name: "llama", path: "./llama.xcframework"),
 
         // 2) Your SDK’s XCFramework
         .binaryTarget(name: "DSSDK", path: "./DSSDK.xcframework"),
 
-        // 3) A tiny wrapper that re-exports DSSDK & Realm
+        // 3) Wrapper that re-exports DSSDK (+ llama if you want)
         .target(
             name: "DSSDKCore",
             dependencies: [
                 "DSSDK",
-                "Realm",
-                "RealmSwift",
                 "llama",
             ],
             path: "Sources/DSSDKCore",
