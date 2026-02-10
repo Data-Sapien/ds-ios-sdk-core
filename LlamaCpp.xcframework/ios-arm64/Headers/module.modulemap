@@ -1,0 +1,7 @@
+module LlamaCppBridge {
+    header "llama.h"
+    header "ggml.h"
+    header "mtmd.h"
+    header "mtmd-helper.h"
+    export *
+}

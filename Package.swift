@@ -10,7 +10,7 @@ let package = Package(
     dependencies: [],
     targets: [
         // 1) Optional / other vendor binaries you still ship
-        .binaryTarget(name: "llama", path: "./llama.xcframework"),
+        .binaryTarget(name: "LlamaCpp", path: "./LlamaCpp.xcframework"),
 
         // 2) Your SDK’s XCFramework
         .binaryTarget(name: "DSSDK", path: "./DSSDK.xcframework"),
@@ -20,7 +20,7 @@ let package = Package(
             name: "DSSDKCore",
             dependencies: [
                 "DSSDK",
-                "llama",
+                "LlamaCpp",
             ],
             path: "Sources/DSSDKCore",
             resources: [
