@@ -75,7 +75,7 @@
           appearance: none;
           width: 22px;
           height: 22px;
-          border: 2px solid #FF9500;
+          border: 2px solid <maincolor>;
           border-radius: 50%;
           position: relative;
           flex-shrink: 0; /* 👈 Prevents squishing */
@@ -90,7 +90,7 @@
           left: 4px;
           width: 10px;
           height: 10px;
-          background-color: #FF9500;
+          background-color: <maincolor>;
           border-radius: 50%;
         }
 
@@ -114,13 +114,13 @@
           font-weight: 600;
           border: none;
           border-radius: 12px;
-          background-color: #FF9500;
+          background-color: <maincolor>;
           color: #fff;
         }
 
         .controls button:disabled {
-          background-color: #ffe5e3;
-          color: #FF9500;
+          background-color: #e5e5e5;
+          color: <maincolor>;
           opacity: 0.6;
         }
 
@@ -146,7 +146,7 @@
         input[type="text"]:focus,
         input[type="number"]:focus,
         input[type="date"]:focus {
-          border: 1px solid #FF9500;
+          border: 1px solid <maincolor>;
           background-color: #fff;
         }
     </style>
