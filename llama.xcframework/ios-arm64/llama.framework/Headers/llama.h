@@ -1584,7 +1584,6 @@ extern "C" {
 }
 #endif
 
-
 #include "mtmd.h"
 #include "mtmd-helper.h"
 

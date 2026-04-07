@@ -2,8 +2,8 @@
 #define MTMD_HELPER_H
 
 // ggml.h included via llama.h umbrella
-// llama.h already included via umbrella header
-// mtmd.h already included via umbrella header
+// llama.h already included via umbrella
+// mtmd.h already included via umbrella
 
 #include <stddef.h>
 #include <stdint.h>
